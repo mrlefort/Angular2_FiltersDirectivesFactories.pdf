@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html >
+  <head lang="en">
+    <meta charset="UTF-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-mocks.js"></script>
+     <script src="app.js"></script>
+    <title></title>
+  </head>
+  <body ng-app="examApp" >
+    <h1>Grades</h1>
+    <p>
+    
+<!--    <div id="tabel" ng-controller="ExamController as ctrl">
+        <table class=" table table-bordered">
+        <th>Name</th>
+        <th>Basic Programming</th>
+        <th>Advanced Programming</th>
+        <th>Database Intro</th>
+        <th>Average</th>
+        
+        <tr ng-repeat="x in students">
+            <td>{{x.name}}</td>
+            <td>{{x.grades[0].grade}}</td>
+            <td>{{x.grades[1].grade}}</td>
+            <td>{{x.grades[2].grade}}</td>
+            <td>{{x | averageFilter}}</td>
+        </tr>
+        
+        
+        
+        </table>
+    </div>-->
+    
+    <div><student-grades></student-grades></div>
+    
+    <div ng-controller="MyController">
+    <button type="button" ng-click="getItems()">Get Items</button>
+    <ul>
+       <li ng-repeat="x in items"> {{x.Name}} </li>
+    </ul>
+</div>
+    
+    
+    </p>
+  </body>
+</html>
